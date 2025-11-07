@@ -1,6 +1,7 @@
 import ProductList from "@/components/shared/product/product-list";
 import { getLatestProducts } from "@/lib/actions/product.actions";
 import { LATEST_PRODUCTS_LIMIT } from "@/lib/constants";
+import { Product } from "@/types";
 
 const Home = async () => {
   const latestProducts = await getLatestProducts();
